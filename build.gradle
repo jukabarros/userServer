@@ -72,8 +72,13 @@ eclipseJdt << {
     f.write('eclipse.preferences.version=1\n')
     f.append('encoding/<project>=utf-8')
 }
-
-
+// Declaração para resolução do buildscript
+buildscript {
+    
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.9.RELEASE")
+    }
+}
 
 // Gradle wrapper
 task wrapper(type: Wrapper) {
