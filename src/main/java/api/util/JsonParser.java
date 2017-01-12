@@ -14,7 +14,7 @@ public class JsonParser {
 		
 		JSONObject jsonObj = new JSONObject(json);
 		
-//		user.setId(jsonObj.getInt("id"));
+//		user.setId(jsonObj.getInt("id")); // generated
 		user.setName(jsonObj.getString("name"));
 		user.setGender(jsonObj.getString("gender"));
 		

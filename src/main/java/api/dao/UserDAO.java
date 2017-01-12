@@ -113,6 +113,9 @@ public class UserDAO {
 	 */
 	
 	public void addUser (User user){
+		int userID = (int) (new Date().getTime());
+		user.setId(userID);
+		
 		users.add(user);
 	}
 	
