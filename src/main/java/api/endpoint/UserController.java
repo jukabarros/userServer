@@ -36,6 +36,8 @@ public class UserController {
 			@RequestParam(value = "dateEnd", required = false) String dateEnd) {
 		
 		List<User> users = new ArrayList<User>();
+		String source = request.getHeader("Referer");
+		String ip = request.getRemoteAddr();
 	 	try {
 	 		if (name != null){
 	 			users = userDAO.findByName(name);

@@ -114,7 +114,7 @@ public class UserDAO {
 	
 	public void addUser (User user){
 		int userID = (int) (new Date().getTime());
-		user.setId(userID);
+		user.setId(userID*-1);
 		
 		users.add(user);
 	}
