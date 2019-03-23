@@ -56,6 +56,7 @@ public class UserTest {
 	 */
 	@Test
 	public void getAllUsers() {
+		System.out.println("Teste Webhook");
 		RestAssured
 				.given()
 				.when()
