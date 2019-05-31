@@ -1,0 +1,16 @@
+{
+	"id": "948459ba-033e-325c-9be2-3e407122f304",
+	"priority": 5,
+	"request": {
+		"url": "/externalService/profile/",
+		"method": "GET"
+	},
+	"response": {
+		"status": 200,
+		"bodyFileName": "profileOK_All.json",
+		"headers": {
+			"Content-Type": "application/json;charset=utf-8"
+		}
+	},
+	"uuid": "948459ba-033e-325c-9be2-3e407122f304"
+}

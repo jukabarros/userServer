@@ -1,0 +1,15 @@
+{
+	"id": "948459ba-033e-325c-9be2-8746238a3422",
+	"priority": 5,
+	"request": {
+		"url": "/externalService/profile/abc",
+		"method": "GET"
+	},
+	"response": {
+		"status": 400,
+		"headers": {
+			"Content-Type": "application/json;charset=utf-8"
+		}
+	},
+	"uuid": "948459ba-033e-325c-9be2-8746238a3422"
+}

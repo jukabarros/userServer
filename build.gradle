@@ -36,8 +36,19 @@ dependencies {
     compile group: 'org.springframework.boot', name:'spring-boot-starter-actuator', version:'2.1.5.RELEASE'
     // Rest Assured
     testCompile group: 'io.rest-assured', name: 'rest-assured', version: '3.3.0'
+    // Wiremock
+    testCompile "com.github.tomakehurst:wiremock-jre8:2.23.2"
      // JSON
     compile 'org.json:json:20151123'
+    
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.8'
+    
+    // INJECT
+    // compile group: 'javax.inject', name: 'javax.inject', version: '1'
+    // Dependencias para rodar o wiremock
+    // compile 'org.reactivestreams:reactive-streams:1.0.0'
+    // testCompile 'org.reactivestreams:reactive-streams-tck:1.0.0'
+    
 }
 
 // Adiciona informações pertinentes a configuração do eclipse
