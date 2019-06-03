@@ -104,5 +104,15 @@ public class WiremockTest {
 		    assertTrue(idPriority==2);
 		}
 	}
+	
+	@Test
+	public void getProfileBadRequest() throws ClientProtocolException, IOException {
+		HttpClient client = HttpClientBuilder.create().build();
+		HttpGet request = new HttpGet(HOST+":"+ PORT + PATH + "abc");
+		request.addHeader("accept", "application/json");
+		
+		HttpResponse response = client.execute(request);
+		assertTrue(response.getStatusLine().getStatusCode() == 400);
+	}
 
 }
